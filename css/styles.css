@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #eac372;
+}
+
+/* Utilities */
+h3 {
+  font-family: "Poiret One", cursive;
+  margin: 20px 0;
+}
+
+h5,
+.section-title,
+footer {
+  color: #eac372;
+}
+
+.btn-custom {
+  border: 1px solid #eac372;
+}
+
+.btn-custom:hover {
+  background: #eac372;
+  color: #000;
+}
+
+/* .intro-title {
+  opacity: 0%;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.intro-appear {
+  opacity: 1;
+  transform: translateY(0px);
+} */
+
+/* Navbar */
+.navbar {
+  background: #000;
+}
+
+#navLinks a {
+  color: #eac372;
+}
+
+#navLinks a:hover {
+  color: #ee9703;
+}
+
+#logo {
+  font-family: "Limelight", cursive;
+  color: #ee9703;
+}
+
+/* #logo a:hover {
+  color: #eac372;
+} */
+
+/* Header */
+header {
+  height: 80vh;
+  background-image: url("../img/LANoire-main.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.mainTitle {
+  padding-top: 20%;
+  letter-spacing: 1rem;
+}
+
+.title-primary {
+  text-transform: uppercase;
+}
+
+/* About */
+.about-paragraph p {
+  font-size: 1.2rem;
+}
+
+.about-download .btn-outline {
+  color: #eac372;
+}
+
+.about-contact:hover {
+  text-decoration: none;
+  color: #ffc009;
+}
+
+/* Projects */
+.project-img {
+  height: 270px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  background: #000;
+  height: 300px;
+}
+
+#projects span {
+  color: #eac372;
+}
+
+/* Skills */
+.background-logo {
+  background: #5f2d04;
+}
+
+.skill-logo {
+  height: 80px;
+  width: 80%;
+  max-width: 100px;
+  object-fit: fill;
+}
+
+/* Contact */
+.contact-logo {
+  width: 50%;
+}
+
+/* .contact-logo a:hover {
+  color: #ddd;
+} */
+
+.contact-form {
+  width: 80%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 3px solid #eac372;
+}
+
+@media (max-width: 576px) {
+  .mainTitle {
+    padding-top: 50%;
+  }
+
+  .skill-logo {
+    object-fit: fill;
+    padding: 2%;
+  }
+}
+
+@media (max-width: 437px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
