@@ -7,20 +7,36 @@
 body {
   background: #000;
   font-family: "Raleway", sans-serif;
+  color: #eac372;
+  font-size: 1.2rem;
+}
+
+/* Utilities */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Limelight", cursive;
 }
 
 a {
   text-decoration: none;
   color: #eac372;
+  font-family: "Poiret One", cursive;
 }
 
-/* Utilities */
-h3 {
-  font-family: "Poiret One", cursive;
+h2 {
   margin: 20px 0;
 }
 
-h5,
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  text-align: justify;
+}
+
 .section-title,
 footer {
   color: #eac372;
@@ -34,17 +50,6 @@ footer {
   background: #eac372;
   color: #000;
 }
-
-/* .intro-title {
-  opacity: 0%;
-  transform: translateY(20px);
-  transition: 0.5s all ease-in-out;
-}
-
-.intro-appear {
-  opacity: 1;
-  transform: translateY(0px);
-} */
 
 /* Navbar */
 .navbar {
@@ -63,10 +68,6 @@ footer {
   font-family: "Limelight", cursive;
   color: #ee9703;
 }
-
-/* #logo a:hover {
-  color: #eac372;
-} */
 
 /* Header */
 header {
@@ -99,8 +100,15 @@ header {
   color: #ffc009;
 }
 
-/* Projects */
-.project-img {
+/* Personnages */
+.card-body-char {
+  background: #000;
+  height: 300px;
+  padding: 20px;
+}
+
+/* Dossiers */
+.dos-img {
   height: 270px;
   width: 100%;
   object-fit: cover;
@@ -108,11 +116,15 @@ header {
 
 .card-body {
   background: #000;
-  height: 300px;
+  height: 500px;
 }
 
-#projects span {
-  color: #eac372;
+.card-text {
+  font-size: 1rem;
+}
+
+.mission-list {
+  margin-left: 20px;
 }
 
 /* Skills */
@@ -127,23 +139,17 @@ header {
   object-fit: fill;
 }
 
-/* Contact */
-.contact-logo {
-  width: 50%;
+.footnote {
+  display: inline-block;
+  font-size: 0.8rem;
 }
 
-/* .contact-logo a:hover {
-  color: #ddd;
-} */
-
-.contact-form {
-  width: 80%;
+.footnote a {
+  text-decoration: none;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border: 3px solid #eac372;
+.footnote a:hover {
+  color: #ee9703;
 }
 
 @media (max-width: 576px) {
