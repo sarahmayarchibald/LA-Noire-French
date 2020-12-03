@@ -1,4 +1,5 @@
-* {
+*,
+html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -37,18 +38,19 @@ p {
   text-align: justify;
 }
 
-.section-title,
-footer {
-  color: #eac372;
+.background-brown {
+  background: #5f2d04;
+  width: 100%;
 }
 
-.btn-custom {
-  border: 1px solid #eac372;
+/* Card format */
+.card-body {
+  background: #000;
+  height: 500px;
 }
 
-.btn-custom:hover {
-  background: #eac372;
-  color: #000;
+.card-text {
+  font-size: 1rem;
 }
 
 /* Navbar */
@@ -67,43 +69,22 @@ footer {
 #logo {
   font-family: "Limelight", cursive;
   color: #ee9703;
+  text-decoration: none;
 }
 
 /* Header */
-header {
-  height: 80vh;
+.img-container {
+  min-height: 80vh;
   background-image: url("../img/LANoire-main.jpg");
-  background-position: center;
+  background-position: center top;
   background-size: cover;
-}
-
-.mainTitle {
-  padding-top: 20%;
-  letter-spacing: 1rem;
-}
-
-.title-primary {
-  text-transform: uppercase;
-}
-
-/* About */
-.about-paragraph p {
-  font-size: 1.2rem;
-}
-
-.about-download .btn-outline {
-  color: #eac372;
-}
-
-.about-contact:hover {
-  text-decoration: none;
-  color: #ffc009;
+  background-repeat: no-repeat;
 }
 
 /* Personnages */
 .card-body-char {
   background: #000;
-  height: 300px;
+  height: 350px;
   padding: 20px;
 }
 
@@ -114,33 +95,20 @@ header {
   object-fit: cover;
 }
 
-.card-body {
-  background: #000;
-  height: 500px;
-}
-
-.card-text {
-  font-size: 1rem;
-}
-
 .mission-list {
   margin-left: 20px;
 }
 
-/* Skills */
-.background-logo {
-  background: #5f2d04;
+/* Music */
+.music-embed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.skill-logo {
-  height: 80px;
-  width: 80%;
-  max-width: 100px;
-  object-fit: fill;
-}
-
+/* Footer */
 .footnote {
-  display: inline-block;
   font-size: 0.8rem;
 }
 
@@ -153,18 +121,17 @@ header {
 }
 
 @media (max-width: 576px) {
-  .mainTitle {
-    padding-top: 50%;
+  .img-container {
+    min-height: 20vh;
   }
 
-  .skill-logo {
+  .console-logo {
     object-fit: fill;
     padding: 2%;
   }
 }
 
-@media (max-width: 437px) {
-  h1 {
-    font-size: 1.8rem;
+@media (max-width: 768px) {
+  .img-container {
+    min-height: 30vh;
   }
-}
