@@ -5,6 +5,10 @@ html {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #000;
   font-family: "Raleway", sans-serif;
@@ -135,3 +139,4 @@ p {
   .img-container {
     min-height: 30vh;
   }
+}
